@@ -1,3 +1,4 @@
+/* eslint-disable jest/no-commented-out-tests */
 // test("nome do teste", callbackFunction);
 
 // function callbackFunction() {
@@ -8,10 +9,12 @@
 //   console.log("Esta função anônima continua funcionando?");
 // });
 
+// eslint-disable-next-line jest/expect-expect
 test("Nome do teste", () => {
   console.log("Esta Arrow Function está funcionando?");
 });
 
+// eslint-disable-next-line jest/expect-expect
 test("Testando novamente", () => {
   console.log("Testando novamente!");
 });
