@@ -12,16 +12,14 @@ beforeAll(async () => {
 describe("POST /api/v1/users", () => {
   describe("Anonymous user", () => {
     test("With unique and valid data", async () => {
-      /*
-      await database.query({
-        text: "INSERT INTO users (username, email) VALUES ($1, $2);",
-        values: ["filipedeschamps2", "Contato@curso.dev"],
-      });
-      
+      // await database.query({
+      //  text: "INSERT INTO users (username, email) VALUES ($1, $2);",
+      //  values: ["filipedeschamps2", "Contato@curso.dev"],
+      // });
+
       // Primeira consulta com a tabela em branco
-      const users = await database.query("SELECT * FROM users;")
-      console.log(users.rows);
-      */
+      // const users = await database.query("SELECT * FROM users;")
+      // console.log(users.rows);
 
       const response = await fetch("http://localhost:3000/api/v1/users", {
         method: "POST",
